@@ -1,0 +1,48 @@
+{
+  "name": "interbanking-mcp",
+  "version": "1.0.0",
+  "description": "Servidor MCP de solo lectura para la API de Interbanking (Argentina) - consulta saldos y movimientos bancarios desde tu agente",
+  "type": "module",
+  "bin": {
+    "interbanking-mcp": "server.js"
+  },
+  "main": "server.js",
+  "files": [
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "check": "node --check server.js",
+    "test": "node --test",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "interbanking",
+    "argentina",
+    "bancos",
+    "saldos",
+    "movimientos",
+    "finanzas"
+  ],
+  "author": "rje1974",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rje1974/interbanking-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rje1974/interbanking-mcp/issues"
+  },
+  "homepage": "https://github.com/rje1974/interbanking-mcp#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "interbanking-client": "file:../../procesosAutomatizados/interbanking-api-ejemplo",
+    "zod": "^4.0.0"
+  }
+}
