@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
-    "interbanking-client": "file:../../procesosAutomatizados/interbanking-api-ejemplo",
+    "interbanking-client": "^1.1.0",
     "zod": "^4.0.0"
   }
 }
