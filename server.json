@@ -1,0 +1,50 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rje1974/interbanking",
+  "description": "Saldos y movimientos bancarios de Interbanking (Argentina). Solo lectura.",
+  "repository": {
+    "url": "https://github.com/rje1974/interbanking-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "interbanking-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "IB_CLIENT_ID",
+          "description": "Client ID de tu aplicación en el portal de desarrolladores de Interbanking",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "IB_CLIENT_SECRET",
+          "description": "Client Secret de la aplicación. Se muestra una sola vez al crearla.",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "IB_REDIRECT_URL",
+          "description": "Debe coincidir con la Redirect URL configurada en el portal e incluir https://",
+          "isRequired": true,
+          "isSecret": false,
+          "format": "string"
+        },
+        {
+          "name": "IB_CUSTOMER_ID",
+          "description": "Código de suscriptor de Interbanking web (Administración > Bancos y cuentas)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

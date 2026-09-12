@@ -1,6 +1,7 @@
 {
   "name": "interbanking-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.rje1974/interbanking",
   "description": "Servidor MCP de solo lectura para la API de Interbanking (Argentina) - consulta saldos y movimientos bancarios desde tu agente",
   "type": "module",
   "bin": {
